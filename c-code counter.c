@@ -13,13 +13,34 @@
 #define REGISTER_6_OFFSET 0X20
 #define REGISTER_6_OFFSET 0X24
 
+int counter (int n)
+{
+	int count = 0;
+	while (n) {
+		count = count + 1;
+		n>>=1;
+	}
+	return count;
+}
+
+
+int main()
+{
+	int i = 9;
+	//printf("Hello");
+	printf("%d", counter(i));
+	return 0;
+}
+
+
+
 //void set_custom_ip_register(int baseaddr, int offset, int value);
 //int get_custom_ip_register(int baseaddr, int offset);
 int main(){
  //int a[10];
  //int b[10];
-}
- for(int i = 0; i <= 8; i++); {
+//}
+ //for(int i = 0; i <= 8; i++); {
 	 //a[i] = (i + 1);
 	 //b[i] = 2 * (i + 1);
 // }
@@ -36,8 +57,8 @@ int main(){
 
 	 //printf("Register 1 = 0x%02X\n\r", temp1);
 // }
-	printf("Register 1 = 0x%02X\n\r", i); 
-	}
+	//printf("Register 1 = 0x%02X\n\r", i); 
+	//}
  //return 0;
  //}
  //void set_custom_ip_register(int baseaddr, int offset, int value){
