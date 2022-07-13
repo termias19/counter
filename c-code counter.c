@@ -36,7 +36,7 @@ int main()
 
 //void set_custom_ip_register(int baseaddr, int offset, int value);
 //int get_custom_ip_register(int baseaddr, int offset);
-int main(){
+//int main(){
  //int a[10];
  //int b[10];
 //}
